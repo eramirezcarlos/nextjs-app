@@ -6,7 +6,7 @@ function EventList( props){
     //de-structuring
     const { items } = props;
 
-    console.log( "Event list items ", items );
+    //console.log( "Event list items ", items );
 
 
     return (
