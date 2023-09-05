@@ -1,16 +1,15 @@
 import AllEventsPage from "@/pages/events";
 import EventItem from "./EventItem";
+import classes from './EventList.module.css';
+
 
 function EventList( props){
 
     //de-structuring
     const { items } = props;
 
-    //console.log( "Event list items ", items );
-
-
     return (
-        <ul>
+        <ul classes={classes.list} >
             {items.map( (event) => (<EventItem 
             
                 key={event.id}
@@ -19,7 +18,6 @@ function EventList( props){
                 location={event.location}
                 date={event.date}
                 image={event.image}
-            
             
             />))}  
 
