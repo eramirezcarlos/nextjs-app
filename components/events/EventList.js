@@ -1,6 +1,6 @@
 import AllEventsPage from "@/pages/events";
 import EventItem from "./EventItem";
-import classes from './EventList.module.css';
+import classes from './eventList.module.css';
 
 
 function EventList( props){
@@ -9,7 +9,7 @@ function EventList( props){
     const { items } = props;
 
     return (
-        <ul classes={classes.list} >
+        <ul className={classes.list} >
             {items.map( (event ) => (<EventItem 
             
                 key={event.id}
