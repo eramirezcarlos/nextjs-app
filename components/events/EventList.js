@@ -21,7 +21,6 @@ function EventList( props){
             
             />))}  
 
-
         </ul>
     );
 
